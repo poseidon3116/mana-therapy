@@ -743,4 +743,11 @@
     });
     const frame = document.querySelector('.photo-frame');
     if(frame){
-      frame.style.opacity='0'; frame.style.transform='translateY
+      frame.style.opacity='0'; frame.style.transform='translateY(20px) scale(0.97)';
+      frame.style.transition = 'opacity 0.9s ease 0.3s, transform 0.9s ease 0.9s';
+      setTimeout(() => { frame.style.opacity='1'; frame.style.transform='translateY(0) scale(1)'; }, 150);
+    }
+  });
+</script>
+</body>
+</html>
